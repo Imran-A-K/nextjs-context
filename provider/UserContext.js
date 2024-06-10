@@ -1,6 +1,8 @@
 import { createContext } from "react";
 
 export const UserContext = createContext({
-  name: "",
-  role: [],
+  user: {
+    name: "",
+    role: [],
+  },
 });

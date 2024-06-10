@@ -23,19 +23,25 @@ export default function Home() {
         <span className="text-blue-600">{user.name}</span>
       </p>
 
-      <div className="flex gap-10 w-full justify-center items-center">
+      <div className="flex gap-10 justify-center items-center flex-wrap">
         <RoleBasedComponentDisplayer
-          component={AdminCard}
           allowedRoles={permissions.VIEW_ADMIN_PANEL}
-        />
-        <RoleBasedComponentDisplayer
-          component={UserCard}
-          allowedRoles={permissions.VIEW_DASHBOARD}
-        />
-        <RoleBasedComponentDisplayer
-          component={GuestCard}
-          allowedRoles={permissions.VIEW_GUEST_PAGE}
-        />
+        >
+          <AdminCard />
+        </RoleBasedComponentDisplayer>
+
+        <RoleBasedComponentDisplayer allowedRoles={permissions.VIEW_DASHBOARD}>
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+          <UserCard />
+        </RoleBasedComponentDisplayer>
+
+        <RoleBasedComponentDisplayer allowedRoles={permissions.VIEW_GUEST_PAGE}>
+          <GuestCard />
+        </RoleBasedComponentDisplayer>
       </div>
     </main>
   );

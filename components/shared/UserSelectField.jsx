@@ -17,7 +17,7 @@ export default function UserSelectField() {
   return (
     <Select value={user} onValueChange={(user) => setUser(user)}>
       <SelectTrigger className="w-[180px]">
-        <SelectValue placeholder="Users" />
+        <SelectValue placeholder="Select a User" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>

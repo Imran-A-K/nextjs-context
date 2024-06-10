@@ -1,18 +1,17 @@
 "use client";
 
-import React, { useState } from "react";
+import { useState } from "react";
 import { UserContext } from "./UserContext";
-import { admin, guest, user } from "@/lib/utilkit/dummyUser";
+import { guest } from "@/lib/permissionSpecifier/dummyUsers";
 
 const GlobalProvider = ({ children }) => {
-  //   const systemUser = user;
-  //   const systemUser = admin;
-  const systemUser = guest;
+  const [user, setUser] = useState(guest);
 
   return (
     <UserContext.Provider
       value={{
-        user: systemUser,
+        user: user,
+        setUser,
       }}
     >
       {children}

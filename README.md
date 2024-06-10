@@ -1,36 +1,155 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Live link : https://role-management-ten.vercel.app/
 
-## Getting Started
+# Role Management
 
-First, run the development server:
+This project is a role management system built with Next.js and React. It leverages Tailwind CSS for styling and various UI components from the Shadcn UI library. Context API is used for global state management
+
+## Table of Contents
+
+- [Live link : https://role-management-ten.vercel.app/](#live-link--httpsrole-management-tenvercelapp)
+- [Role Management](#role-management)
+  - [Table of Contents](#table-of-contents)
+  - [Installation](#installation)
+
+## Installation
+
+To install the necessary dependencies, run the following command:
+
+```bash
+npm install
+```
+
+````
+
+or, if you prefer using Yarn:
+
+```bash
+yarn install
+```
+
+## Scripts
+
+Here are the scripts you can use to manage the project:
+
+- `dev`: Starts the development server.
+- `build`: Builds the application for production.
+- `start`: Starts the production server.
+- `lint`: Runs the linter to check for code issues.
+
+You can run these scripts using npm:
+
+```bash
+npm run <script>
+```
+
+or with Yarn:
+
+```bash
+yarn <script>
+```
+
+### Example
+
+To start the development server, run:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+or
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Dependencies
 
-## Learn More
+This project uses the following dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+- **@radix-ui/react-select**: A library for building accessible, high-quality React UI components.
+- **class-variance-authority**: Utility for managing class variance.
+- **clsx**: A utility for constructing `className` strings conditionally.
+- **lucide-react**: A library of customizable, high-quality icons for React.
+- **next**: The Next.js framework.
+- **react**: The React library.
+- **react-dom**: React's DOM package.
+- **tailwind-merge**: Utility for merging Tailwind CSS classes.
+- **tailwindcss-animate**: Plugin for adding animations to Tailwind CSS.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### DevDependencies
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The project also uses the following development dependencies:
 
-## Deploy on Vercel
+- **eslint**: A tool for identifying and reporting on patterns found in ECMAScript/JavaScript code.
+- **eslint-config-next**: ESLint configuration used by Next.js.
+- **postcss**: A tool for transforming CSS with JavaScript plugins.
+- **tailwindcss**: A utility-first CSS framework.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Development
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+To start developing, use the following command to run the development server:
+
+```bash
+npm run dev
+```
+
+or
+
+```bash
+yarn dev
+```
+
+This will start the Next.js development server and you can open your browser to [http://localhost:3000](http://localhost:3000) to see your application.
+
+## Build
+
+To build the application for production, use the following command:
+
+```bash
+npm run build
+```
+
+or
+
+```bash
+yarn build
+```
+
+This will create an optimized production build of your application in the `.next` folder.
+
+## Start
+
+To start the application in production mode, first make sure you have built the application, then run:
+
+```bash
+npm run start
+```
+
+or
+
+```bash
+yarn start
+```
+
+This will start the Next.js production server.
+
+## Lint
+
+To check for linting issues in your code, use the following command:
+
+```bash
+npm run lint
+```
+
+or
+
+```bash
+yarn lint
+```
+
+This will run ESLint and display any issues it finds.
+
+## License
+
+This project is licensed under the MIT License.
+````

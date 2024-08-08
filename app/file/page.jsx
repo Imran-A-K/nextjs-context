@@ -25,7 +25,7 @@ function Page() {
     <div className="pt-10 pl-14">
       <Link
         className="border-2 rounded-sm m-5 px-5 py-3 bg-teal-500 text-white"
-        href="/selectableGrid"
+        href="/selectable-grid"
       >
         Grid
       </Link>

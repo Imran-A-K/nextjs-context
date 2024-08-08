@@ -5,6 +5,7 @@ import { VscNewFile } from "react-icons/vsc";
 
 import { CgRename } from "react-icons/cg";
 import { IoIosTrash } from "react-icons/io";
+import { getIcon, getIconClasses, getIconStyles } from "@/lib/utils";
 function Folder({
   folderData,
   handleInsertNode,
@@ -127,7 +128,9 @@ function Folder({
       <div className="flex gap-4 cursor-pointer group">
         <div className="flex gap-4 items-center">
           {" "}
-          <span>📄</span>{" "}
+          <span style={getIcon(folderData.name).iconStyles}>
+            {getIcon(folderData.name).icon}
+          </span>{" "}
           {isRenaming ? (
             <input
               type="text"
